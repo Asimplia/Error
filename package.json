@@ -1,0 +1,48 @@
+{
+  "name": "farfalia-error",
+  "version": "0.1.0",
+  "description": "Error",
+  "main": "build/src/index.js",
+  "author": {
+    "name": "misak113",
+    "email": "michael@farfalia.com"
+  },
+  "dependencies": {
+    "asimplia-repository": ">=0.6.21",
+    "asimplia-util": ">=0.3.9",
+    "express": "~4.1.1",
+    "http-status": "~0.1.6",
+    "moment": "^2.6.0",
+    "q": "~1.1.2",
+    "request": "~2.51.0",
+    "socket.io": "^1.2.0",
+    "underscore": "^1.7.0",
+    "xml2js": "~0.4.4"
+  },
+  "devDependencies": {
+    "grunt-typescript": "~0.6.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt": "^0.4.5",
+    "tsd": "^0.5.7",
+    "grunt-jasmine-node": "~0.2.1",
+    "grunt-tsd": "git+https://github.com/misak113/grunt-tsd.git#master",
+    "grunt-develop": "~0.4.0",
+    "grunt-wait": "~0.1.0",
+    "grunt-shell": "~1.1.1",
+    "typescript": "~1.4.1"
+  },
+  "systemRequirements": {
+    "mongodb": "~2.4.6",
+    "postgresql": "~9.3.5"
+  },
+  "scripts": {
+    "prepublish": "./node_modules/.bin/grunt prepublish",
+    "test": "./node_modules/.bin/grunt test",
+    "start": "node app.js"
+  },
+  "publishConfig": {
+    "registry": "http://farfalia-back.cloudapp.net:4873"
+  }
+}
